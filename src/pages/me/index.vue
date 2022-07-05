@@ -88,7 +88,7 @@
     </div>
   </div>
 
-  <TabBar/>
+  <TabBar :active="active"/>
 </div>
 </template>
 
@@ -101,7 +101,12 @@ export default {
     TabBar,
     [Icon.name]:Icon,
     [Button.name]:Button,
-  }
+  },
+  data() {
+    return {
+      active:1
+    };
+  },
 }
 </script>
 

@@ -2,7 +2,7 @@
 <div>
   <router-view/>
   <van-tabbar v-model="active" active-color="#ee0a24">
-    <van-tabbar-item :to="(item.path)"   v-for="item in tabBars" :key="item.id" :icon="item.icon"  @click="onClickTab(item.id)">{{item.name}}</van-tabbar-item>
+    <van-tabbar-item :to="(item.path)"   v-for="item in tabBars" :key="item.id" :icon="item.icon" @click="onClickTab(item.id)">{{item.name}}</van-tabbar-item>
   </van-tabbar>
 </div>
 </template>
@@ -15,9 +15,10 @@ export default {
     [Tabbar.name]:Tabbar,
     [TabbarItem.name]:TabbarItem,
   },
+  props:['active'],
   data () {
     return {
-      active: 0,
+      active:this.active,
       tabBars: [
         {
           path: '/',
@@ -34,23 +35,12 @@ export default {
       ]
     }
   },
-  watch:{
-    $route(to) {
-      let active = 0
-       this.tabBars.map((item) => {
-        if (item.path === to.path) {
-            active = item.id
-        }
-      })
-      this.active = active
-    },
-  },
   methods:{
     onClickTab: function (index) {
       const idx = parseInt(index)
       let path = this.tabBars[idx].path
       this.$router.push(path)
-    }
+    },
   }
 }
 </script>
