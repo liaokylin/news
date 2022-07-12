@@ -9,8 +9,9 @@
 <script>
 
 import Search from '@/pages/common/Search.vue'
-import Tab from '@/pages/common/Tab.vue'
+import Tab from '@/pages/home/Tab.vue'
 import TabBar from '@/pages/common/TabBar.vue'
+
 export default {
   components: {
     TabBar,

@@ -169,13 +169,13 @@ export default {
   border-radius: 3%;
 }
 .slogan {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   padding-left: 1.6rem;
 }
 .post-btn {
   float: right;
   margin-right: 1.4rem;
-  padding-right: 0.8rem;
+  padding-right: 0.6rem;
 }
 .services {
   margin-top: 1.6rem;
