@@ -15,9 +15,94 @@
     <div class="sort-by">
       <van-button plain round type="default" size="small" v-for="item in sort.label" :key="item.id" @click="changeItemHandle(item.id)">{{ item.name }}</van-button>
     </div>
-    <div>
-      <div>
-
+    <div class="sort-items">
+      <div class="sort-item">
+        <van-image
+            width="100"
+            height="100"
+            src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
+        />
+        <div class="item-content">
+          <div><span class="item-index">1</span><span>九龙地神</span></div>
+          <div>2044万热度</div>
+        </div>
+      </div>
+      <div class="sort-item">
+        <van-image
+            width="100"
+            height="100"
+            src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
+        />
+        <div class="item-content">
+          <div><span>1</span><span>九龙地神</span></div>
+          <div>2044万热度</div>
+        </div>
+      </div>
+      <div class="sort-item">
+        <van-image
+            width="100"
+            height="100"
+            src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
+        />
+        <div class="item-content">
+          <div><span>1</span><span>九龙地神</span></div>
+          <div>2044万热度</div>
+        </div>
+      </div>
+      <div class="sort-item">
+        <van-image
+            width="100"
+            height="100"
+            src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
+        />
+        <div class="item-content">
+          <div><span>1</span><span>九龙地神</span></div>
+          <div>2044万热度</div>
+        </div>
+      </div>
+      <div class="sort-item">
+        <van-image
+            width="100"
+            height="100"
+            src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
+        />
+        <div class="item-content">
+          <div><span>1</span><span>九龙地神</span></div>
+          <div>2044万热度</div>
+        </div>
+      </div>
+      <div class="sort-item">
+        <van-image
+            width="100"
+            height="100"
+            src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
+        />
+        <div class="item-content">
+          <div><span>1</span><span>九龙地神</span></div>
+          <div>2044万热度</div>
+        </div>
+      </div>
+      <div class="sort-item">
+        <van-image
+            width="100"
+            height="100"
+            src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
+        />
+        <div class="item-content">
+          <div><span>1</span><span>九龙地神</span></div>
+          <div>2044万热度</div>
+        </div>
+      </div>
+      <div class="sort-item">
+        <van-image
+            width="100"
+            height="100"
+            src="https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg"
+        />
+        <div class="item-content">
+          <div><span>1</span><span>九龙地神</span></div>
+          <div>2044万热度</div>
+        </div>
       </div>
     </div>
   </div>
@@ -56,7 +141,49 @@ export default {
       ],
       sort:{
         activeColor:'',
-        label:[{name:'推荐榜',id:1},{name:'完结榜',id:2},{name:'热搜榜',id:3},{name:'听书榜',id:4}]
+        label:[{name:'推荐榜',id:1},{name:'完结榜',id:2},{name:'热搜榜',id:3},{name:'听书榜',id:4}],
+        items:{
+          '1':[
+              {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+              {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+              {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+              {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+              {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+              {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+             {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+             {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+          ],
+          '2':[
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+          ],
+          '3':[
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+          ],
+          '4':[
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+            {name:'九龙地神',image:'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg','hot':'2044万热度'},
+          ],
+        }
       },
     }
   },
@@ -105,5 +232,22 @@ export default {
   margin-top: 1rem;
   display: flex;
   justify-content: space-around;
+}
+.sort-items {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sort-item {
+  box-sizing: border-box;
+  width: 50%;
+  display: flex;
+  padding: .2rem;
+}
+.item-index {
+  padding: 0 .2rem;
+}
+.item-content {
+  margin-left: .8rem;
 }
 </style>
