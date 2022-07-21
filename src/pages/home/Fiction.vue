@@ -1,20 +1,49 @@
 <template>
 <div>
+  <van-config-provider :theme-vars="themeVars">
   <div class="cate">
     <div v-for="item in cate" class="cate-item">
       <img :src="item.src" :key="item.name" class="cate-image">
       <div class="cate-name">{{item.name}}</div>
     </div>
   </div>
+  <div class="sort">
+    <div class="sort-top">
+      <span class="sort-name">排行榜</span>
+      <span class="sort-more">更多</span>
+    </div>
+    <div class="sort-by">
+      <van-button plain round type="default" size="small" v-for="item in sort.label" :key="item.id" @click="changeItemHandle(item.id)">{{ item.name }}</van-button>
+    </div>
+    <div>
+      <div>
+
+      </div>
+    </div>
+  </div>
+  </van-config-provider>
 </div>
 </template>
 
 <script>
 import { Image as VanImage } from 'vant'
+import { Button } from 'vant'
+import { ConfigProvider } from 'vant'
 export default {
   name: "Fiction",
   components:{
     [VanImage.name]:VanImage,
+    [Button.name]:Button,
+    [ConfigProvider.name]:ConfigProvider
+  },
+  setup() {
+    const themeVars = {
+      buttonSmallFontSize: '14px',
+      buttonSmallPadding: '0 15px'
+    };
+    return {
+      themeVars
+    }
   },
   data:function (){
     return {
@@ -25,6 +54,15 @@ export default {
         {name:'找书','src':'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg'},
         {name:'账户','src':'https://fastly.jsdelivr.net/npm/@vant/assets/cat.jpeg'},
       ],
+      sort:{
+        activeColor:'',
+        label:[{name:'推荐榜',id:1},{name:'完结榜',id:2},{name:'热搜榜',id:3},{name:'听书榜',id:4}]
+      },
+    }
+  },
+  methods:{
+    changeItemHandle(id) {
+      console.log(id)
     }
   }
 }
@@ -49,5 +87,23 @@ export default {
   margin: .6rem 0;
   color: #6C6C6C;
   font-size: 1rem;
+}
+.sort-top {
+  display: flex;
+  justify-content: space-between;
+}
+.sort-name {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+}
+.sort-more{
+  margin-right: 1rem;
+  color: #7B7B7B;
+}
+
+.sort-by {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 </style>
